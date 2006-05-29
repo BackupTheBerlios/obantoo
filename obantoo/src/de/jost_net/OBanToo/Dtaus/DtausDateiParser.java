@@ -1,7 +1,7 @@
 /*
  * $Source: /home/xubuntu/berlios_backup/github/tmp-cvs/obantoo/Repository/obantoo/src/de/jost_net/OBanToo/Dtaus/DtausDateiParser.java,v $
- * $Revision: 1.3 $
- * $Date: 2006/05/28 09:06:32 $
+ * $Revision: 1.4 $
+ * $Date: 2006/05/29 16:38:03 $
  * $Author: jost $
  *
  * Copyright 2006 by Heiner Jostkleigrewe
@@ -109,6 +109,11 @@ public class DtausDateiParser
       throw new DtausException(DtausException.UNGUELTIGE_LOGISCHE_DATEI, nr
           + "");
     }
+  }
+
+  public LogischeDatei getLogischeDatei(int nr)
+  {
+    return (LogischeDatei) logischeDateien.elementAt(nr - 1);
   }
 
   private CSatz internNext() throws IOException, DtausException
@@ -245,10 +250,11 @@ public class DtausDateiParser
 }
 /*
  * $Log: DtausDateiParser.java,v $
- * Revision 1.3  2006/05/28 09:06:32  jost
- * - Unterstützung mehrerer logischer Dateien pro physikalischer Datei
- * - interne Umstellung von Reader auf InputStream
- * Revision 1.2 2006/05/25 20:30:40 jost
+ * Revision 1.4  2006/05/29 16:38:03  jost
+ * Anpassungen für den Einsatz in Hibiscus
+ * Revision 1.3 2006/05/28 09:06:32 jost -
+ * Unterstützung mehrerer logischer Dateien pro physikalischer Datei - interne
+ * Umstellung von Reader auf InputStream Revision 1.2 2006/05/25 20:30:40 jost
  * Korrektur Satzlängen und Doku Revision 1.1 2006/05/24 16:24:44 jost
  * Prerelease
  * 

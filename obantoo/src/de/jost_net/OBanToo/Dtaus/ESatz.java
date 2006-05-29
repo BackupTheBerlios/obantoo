@@ -1,7 +1,7 @@
 /*
  * $Source: /home/xubuntu/berlios_backup/github/tmp-cvs/obantoo/Repository/obantoo/src/de/jost_net/OBanToo/Dtaus/ESatz.java,v $
- * $Revision: 1.1 $
- * $Date: 2006/05/24 16:24:44 $
+ * $Revision: 1.2 $
+ * $Date: 2006/05/29 16:38:21 $
  * $Author: jost $
  *
  * Copyright 2006 by Heiner Jostkleigrewe
@@ -85,6 +85,10 @@ public class ESatz extends Satz
           value);
     }
   }
+  public int getAnzahlDatensaetze()
+  {
+    return eAnzahlC;
+  }
 
   public void setSummeKontonummern(String value) throws DtausException
   {
@@ -119,6 +123,9 @@ public class ESatz extends Satz
 }
 /*
  * $Log: ESatz.java,v $
+ * Revision 1.2  2006/05/29 16:38:21  jost
+ * Anpassungen für den Einsatz in Hibiscus
+ *
  * Revision 1.1  2006/05/24 16:24:44  jost
  * Prerelease
  *
