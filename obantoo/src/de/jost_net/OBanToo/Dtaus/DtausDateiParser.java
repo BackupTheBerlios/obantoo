@@ -1,7 +1,7 @@
 /*
  * $Source: /home/xubuntu/berlios_backup/github/tmp-cvs/obantoo/Repository/obantoo/src/de/jost_net/OBanToo/Dtaus/DtausDateiParser.java,v $
- * $Revision: 1.4 $
- * $Date: 2006/05/29 16:38:03 $
+ * $Revision: 1.5 $
+ * $Date: 2006/06/04 12:23:51 $
  * $Author: jost $
  *
  * Copyright 2006 by Heiner Jostkleigrewe
@@ -250,6 +250,9 @@ public class DtausDateiParser
 }
 /*
  * $Log: DtausDateiParser.java,v $
+ * Revision 1.5  2006/06/04 12:23:51  jost
+ * Redaktionelle Änderung
+ *
  * Revision 1.4  2006/05/29 16:38:03  jost
  * Anpassungen für den Einsatz in Hibiscus
  * Revision 1.3 2006/05/28 09:06:32 jost -
