@@ -1,7 +1,7 @@
 /*
  * $Source: /home/xubuntu/berlios_backup/github/tmp-cvs/obantoo/Repository/obantoo/src/de/jost_net/OBanToo/Dtaus/ESatz.java,v $
- * $Revision: 1.5 $
- * $Date: 2006/08/28 19:04:06 $
+ * $Revision: 1.6 $
+ * $Date: 2006/10/06 12:47:57 $
  * $Author: jost $
  *
  * Copyright 2006 by Heiner Jostkleigrewe
@@ -62,9 +62,9 @@ public class ESatz extends Satz
    * 
    * @param satz
    */
-  public ESatz(String satz) throws DtausException
+  public ESatz(String satz, int toleranz) throws DtausException
   {
-    satz = codingFromDtaus(satz);
+    satz = codingFromDtaus(satz, toleranz);
     validCharacters(satz);
     if (!satz.substring(0, 4).equals(eSatzlaenge))
     {
@@ -182,10 +182,11 @@ public class ESatz extends Satz
 }
 /*
  * $Log: ESatz.java,v $
- * Revision 1.5  2006/08/28 19:04:06  jost
- * Korrekte Behandlung von Groß-Kleinschreibung und ÄÖÜß
- * Revision 1.4 2006/06/14 19:57:05 jost Mehrere logische
- * Dateien können jetzt ausgegeben werden.
+ * Revision 1.6  2006/10/06 12:47:57  jost
+ * Optionale Fehlertoleranz
+ * Revision 1.5 2006/08/28 19:04:06 jost Korrekte
+ * Behandlung von Groß-Kleinschreibung und ÄÖÜß Revision 1.4 2006/06/14 19:57:05
+ * jost Mehrere logische Dateien können jetzt ausgegeben werden.
  * 
  * Revision 1.3 2006/06/05 09:35:36 jost Erweiterungen f. d. DtausDateiWriter
  * Revision 1.2 2006/05/29 16:38:21 jost Anpassungen für den Einsatz in Hibiscus
