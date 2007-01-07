@@ -1,7 +1,7 @@
 /*
  * $Source: /home/xubuntu/berlios_backup/github/tmp-cvs/obantoo/Repository/obantoo/src/de/jost_net/OBanToo/Dtaus/DtausException.java,v $
- * $Revision: 1.4 $
- * $Date: 2006/06/05 09:35:13 $
+ * $Revision: 1.5 $
+ * $Date: 2007/01/07 20:42:31 $
  * $Author: jost $
  *
  * Copyright 2006 by Heiner Jostkleigrewe
@@ -68,7 +68,7 @@ public class DtausException extends Exception
 
   public final static String C_ERWEITERUNG_FEHLERHAFT = "Erweiterung fehlerhaft: ";
 
-  public final static String C_VERWENDUNGSZWECK_FEHLERHAFT = "Verwendungszweck fehlerhaft (Länge = 0 oder > 27) oder mehr als 13 Stück.";
+  public final static String C_VERWENDUNGSZWECK_FEHLERHAFT = "Verwendungszweck fehlerhaft (Länge > 27) oder mehr als 13 Stück.";
 
   public final static String E_SATZLAENGENFELD_FEHLERHAFT = "Satzlängenfeld des E-Satzes fehlerhaft: ";
 
@@ -96,6 +96,9 @@ public class DtausException extends Exception
 }
 /*
  * $Log: DtausException.java,v $
+ * Revision 1.5  2007/01/07 20:42:31  jost
+ * Verwendungszwecke der LÃ¤nge 0 zugelassen.
+ *
  * Revision 1.4  2006/06/05 09:35:13  jost
  * Erweiterungen f. d. DtausDateiWriter
  * Revision 1.3 2006/05/30 17:40:09 jost Kommentar
