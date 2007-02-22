@@ -1,7 +1,7 @@
 /*
  * $Source: /home/xubuntu/berlios_backup/github/tmp-cvs/obantoo/Repository/obantoo/src/de/jost_net/OBanToo/Dtaus/DtausException.java,v $
- * $Revision: 1.5 $
- * $Date: 2007/01/07 20:42:31 $
+ * $Revision: 1.6 $
+ * $Date: 2007/02/22 18:40:21 $
  * $Author: jost $
  *
  * Copyright 2006 by Heiner Jostkleigrewe
@@ -50,7 +50,11 @@ public class DtausException extends Exception
 
   public final static String C_NAME_EMPFAENGER = "Name des Zahlungsempfängers/Zahlungspflichtigen ungültig.";
 
+  public final static String C_NAME_EMPFAENGER2 = "Name(2) des Zahlungsempfängers/Zahlungspflichtigen ungültig.";
+
   public final static String C_NAME_ABSENDER = "Name des Absenders ungültig.";
+
+  public final static String C_NAME_ABSENDER2 = "Name(2) des Absenders ungültig.";
 
   public final static String C_INTERNEKUNDENNUMMER_FEHLERHAFT = "Interne Kundennummer fehlerhaft: ";
 
@@ -96,6 +100,9 @@ public class DtausException extends Exception
 }
 /*
  * $Log: DtausException.java,v $
+ * Revision 1.6  2007/02/22 18:40:21  jost
+ * Implementierung der Erweiterungsteile 01 (Name EmpfÃ¤nger/Zahlungspflichtiger 2) und 03 (Absender/ZahlungsempfÃ¤nger 2)
+ *
  * Revision 1.5  2007/01/07 20:42:31  jost
  * Verwendungszwecke der LÃ¤nge 0 zugelassen.
  *
