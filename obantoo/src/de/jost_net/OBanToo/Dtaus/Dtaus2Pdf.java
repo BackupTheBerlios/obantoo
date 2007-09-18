@@ -1,7 +1,7 @@
 /*
  * $Source: /home/xubuntu/berlios_backup/github/tmp-cvs/obantoo/Repository/obantoo/src/de/jost_net/OBanToo/Dtaus/Dtaus2Pdf.java,v $
- * $Revision: 1.1 $
- * $Date: 2007/02/14 14:42:36 $
+ * $Revision: 1.2 $
+ * $Date: 2007/09/18 17:50:19 $
  * $Author: jost $
  *
  * Copyright 2006 by Heiner Jostkleigrewe
@@ -12,7 +12,6 @@ package de.jost_net.OBanToo.Dtaus;
 import java.awt.Color;
 import java.io.FileOutputStream;
 import java.io.IOException;
-import java.text.DecimalFormat;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
@@ -265,19 +264,19 @@ public class Dtaus2Pdf
    *          die Zahl.
    * @return die erzeugte Zelle.
    */
-  private PdfPCell getDetailCell(double value)
-  {
-    Font f = null;
-    if (value >= 0)
-      f = FontFactory.getFont(FontFactory.HELVETICA, 8, Font.NORMAL,
-          Color.BLACK);
-    else
-      f = FontFactory.getFont(FontFactory.HELVETICA, 8, Font.NORMAL, Color.RED);
-    PdfPCell cell = new PdfPCell(new Phrase(new DecimalFormat("###,###,##0.00")
-        .format(value), f));
-    cell.setHorizontalAlignment(Element.ALIGN_RIGHT);
-    return cell;
-  }
+//  private PdfPCell getDetailCell(double value)
+//  {
+//    Font f = null;
+//    if (value >= 0)
+//      f = FontFactory.getFont(FontFactory.HELVETICA, 8, Font.NORMAL,
+//          Color.BLACK);
+//    else
+//      f = FontFactory.getFont(FontFactory.HELVETICA, 8, Font.NORMAL, Color.RED);
+//    PdfPCell cell = new PdfPCell(new Phrase(new DecimalFormat("###,###,##0.00")
+//        .format(value), f));
+//    cell.setHorizontalAlignment(Element.ALIGN_RIGHT);
+//    return cell;
+//  }
 
   /**
    * Gibt einen Leerstring aus, falls der Text null ist.
