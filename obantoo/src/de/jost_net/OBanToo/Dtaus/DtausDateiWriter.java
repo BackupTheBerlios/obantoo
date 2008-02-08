@@ -1,7 +1,7 @@
 /*
  * $Source: /home/xubuntu/berlios_backup/github/tmp-cvs/obantoo/Repository/obantoo/src/de/jost_net/OBanToo/Dtaus/DtausDateiWriter.java,v $
- * $Revision: 1.6 $
- * $Date: 2007/09/18 17:50:58 $
+ * $Revision: 1.7 $
+ * $Date: 2008/02/08 18:45:02 $
  * $Author: jost $
  *
  * Copyright 2006 by Heiner Jostkleigrewe
@@ -352,12 +352,15 @@ public class DtausDateiWriter
 }
 /*
  * $Log: DtausDateiWriter.java,v $
+ * Revision 1.7  2008/02/08 18:45:02  jost
+ * *** empty log message ***
+ *
  * Revision 1.6  2007/09/18 17:50:58  jost
- * √úberfl√ºssige throws entfernt.
- * Zus√§tzliche Methoden.
+ * ¸berfl¸ssige throws entfernt.
+ * Zus‰tzliche Methoden.
  *
  * Revision 1.5  2007/02/22 18:40:04  jost
- * Implementierung der Erweiterungsteile 01 (Name Empf√§nger/Zahlungspflichtiger 2) und 03 (Absender/Zahlungsempf√§nger 2)
+ * Implementierung der Erweiterungsteile 01 (Name Empf‰nger/Zahlungspflichtiger 2) und 03 (Absender/Zahlungsempf‰nger 2)
  * Revision 1.4 2006/09/20 15:47:29 jost Neue
  * Methode "BigDecimal getSummeBetraegeDecimal()" Revision 1.3 2006/08/28
  * 19:03:42 jost Korrekte Behandlung von Groﬂ-Kleinschreibung und ƒ÷‹ﬂ Revision
