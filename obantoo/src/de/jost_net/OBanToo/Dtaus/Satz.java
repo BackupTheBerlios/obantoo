@@ -1,7 +1,7 @@
 /*
  * $Source: /home/xubuntu/berlios_backup/github/tmp-cvs/obantoo/Repository/obantoo/src/de/jost_net/OBanToo/Dtaus/Satz.java,v $
- * $Revision: 1.9 $
- * $Date: 2008/02/17 08:31:26 $
+ * $Revision: 1.10 $
+ * $Date: 2008/05/07 15:57:40 $
  * $Author: jost $
  *
  * Copyright 2006 by Heiner Jostkleigrewe
@@ -56,6 +56,7 @@ public class Satz
     value = value.replaceAll("ö", "Ö");
     value = value.replaceAll("ü", "Ü");
     value = value.replaceAll("é", "E");
+    value = value.replaceAll("è", "E");
     value = value.replaceAll("É", "E");
     return value;
   }
@@ -145,6 +146,9 @@ public class Satz
 }
 /*
  * $Log: Satz.java,v $
+ * Revision 1.10  2008/05/07 15:57:40  jost
+ * e mit Accent grave durch e ersetzt
+ *
  * Revision 1.9  2008/02/17 08:31:26  jost
  * Neuer Toleranzlevel
  * Revision 1.8 2007/09/18 17:51:57 jost ÃœberflÃ¼ssige
