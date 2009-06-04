@@ -1,7 +1,7 @@
 /*
  * $Source: /home/xubuntu/berlios_backup/github/tmp-cvs/obantoo/Repository/obantoo/src/de/jost_net/OBanToo/Tools/Tr.java,v $
- * $Revision: 1.1 $
- * $Date: 2009/06/04 08:30:40 $
+ * $Revision: 1.2 $
+ * $Date: 2009/06/04 08:36:13 $
  * $Author: jost $
  *
  * Copyright 2009 by Heiner Jostkleigrewe
@@ -26,9 +26,9 @@ public class Tr
     System.out.println(normalizeUTF8("ÈËBla¿—\u00ff\u0100"));
   }
 
-  private static ArrayList<CharSequence> fromarray = new ArrayList<CharSequence>();
+  private static ArrayList<String> fromarray = new ArrayList<String>();
 
-  private static ArrayList<CharSequence> toarray = new ArrayList<CharSequence>();
+  private static ArrayList<String> toarray = new ArrayList<String>();
 
   static
   {
@@ -385,7 +385,7 @@ public class Tr
     return tr(string);
   }
 
-  private static void add(String from, CharSequence to)
+  private static void add(String from, String to)
   {
     fromarray.add(from);
     toarray.add(to);
@@ -406,7 +406,9 @@ public class Tr
 }
 /*
  * $Log: Tr.java,v $
- * Revision 1.1  2009/06/04 08:30:40  jost
- * Umsetzung Sonderzeichen erweitert.
- *
+ * Revision 1.2  2009/06/04 08:36:13  jost
+ * Bugfix
+ * Revision 1.1 2009/06/04 08:30:40 jost Umsetzung
+ * Sonderzeichen erweitert.
+ * 
  */
